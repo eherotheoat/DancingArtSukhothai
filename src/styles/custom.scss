@@ -1,0 +1,46 @@
+$theme-colors: (
+    "primary": #1e7bcb,
+    "danger": #e65251,
+    "success" : #00ce68,
+    "warning" : #d99500,
+    "info": #17a2b8,
+    "secondary" : #6c757d
+);
+
+$input-btn-padding-y:         .575rem !default;
+$input-btn-padding-x:         .95rem !default;
+
+@import "~bootstrap/scss/bootstrap";
+
+
+.btn {
+    color: #fff; 
+    &:hover {
+        color: #fff; 
+    }
+    &:active {
+        color: #fff; 
+    }
+    &:focus{
+        color: #fff;
+    }
+    &:disabled{
+        color: #e5e5e5;
+    }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    color: $value !important; 
+    &:hover {
+        color: #fff !important; 
+    }
+    &:active {
+        color: #fff !important; 
+    }
+    &:focus{
+        color: #fff !important;
+    }
+  }
+}
+

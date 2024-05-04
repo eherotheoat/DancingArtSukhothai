@@ -1,0 +1,16 @@
+div.page-loading {
+  width: 100vw;
+  height: 100vh;
+  z-index:3000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:  rgba(0, 0, 0, 0.8);
+}
+  
+div.page-loading > div.loading {
+  position: absolute;
+  top: 45%;
+  left:0;
+  right: 0;
+}

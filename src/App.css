@@ -1,0 +1,27 @@
+.content {
+  width: 100vw;
+  padding: 20px;
+  min-height: 100vh;
+  margin-top: 80px;
+  margin-left: 250px;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  transition: all 0.3s;
+  background-color: #f2f8f9;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.content.active {
+  margin-left: 80px;
+}
+
+@media (max-width: 768px){
+  .content {
+    margin-left: 0;
+  }
+}
